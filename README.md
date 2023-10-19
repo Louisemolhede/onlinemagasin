@@ -1,1 +1,1 @@
-# onlinemagazine
+# onlinemagasin
