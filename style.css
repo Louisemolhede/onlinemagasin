@@ -1,0 +1,447 @@
+ /* Hele indholdet i body */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.7;
+}
+
+ /* Navbar */
+.navbar {
+    background-color: #fff;
+    border-bottom: 1px solid #000;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    justify-content: space-between;
+}
+
+ /* Logo */
+.logo img {
+    width: 140px; 
+    height: auto; 
+  }
+
+/* Navbar menu */
+.menu {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+}
+
+.menu-item {
+    list-style: none;
+    margin: 0 20px;
+}
+
+.menu-item a {
+    text-decoration: none;
+    color: #000;
+}
+
+/* Dropdown menu */
+.dropdown {
+    position: relative;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    min-width: 160px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    top: 100%;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.submenu {
+    display: block;
+}
+
+.submenu-item {
+    padding: 10px;
+}
+/* FORSIDE */
+/* Stort billede af Laura */
+.forside-img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Velkommen tekst, både overskrift og tekst, på forsiden */
+.velkommen-text {
+    text-align: center; 
+    padding: 30px; 
+}
+/* Velkommen tekst, kun overskrift, på forsiden */
+.velkommen-text h1 {
+    font-size: 28px; 
+    margin-bottom: 25px; 
+    margin-top: 20px;
+    text-align: left;
+    margin-left: 30px;
+}
+
+/* Velkommen tekst, kun tekst, på forsiden */
+.velkommen-text p {
+    font-size: 16px; 
+    text-align: left;
+    margin: 30px;
+}
+
+/* Overskriften "DE NYESTE ARTIKLER" */
+.artikeloverskrift-atikel1 {
+    margin-top: 10px;
+    text-align: center;
+    font-size: 24px;
+}
+
+/* De 3 artikler nederst på forsiden */
+.flex-container-forside {
+    display: flex;
+    justify-content: space-between; 
+}
+
+/* Overskriften til de 3 artikler på forsiden */
+.overskriftartikler {
+    font-weight: bold;
+    text-align: left;
+    margin-top: 15px;
+}
+
+/* Overskrift + billede til de 3 artikler på forsiden */
+.flex-item-forside {
+    flex: 1; 
+    text-align: center;
+    padding: 20px;
+    margin: 10px;
+}
+
+/* Billederne af artiklerne på forsiden */
+.forsideartikel-img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Media query - billederne af artiklerne går fra række til kolonne, når skærmen bliver mindre */
+@media screen and (max-width: 720px) {
+    .flex-container-forside {
+        flex-direction: column;
+    }
+    }
+
+/* ARTIKEL 1+2+3 */
+/* Overskrift */
+.headline {
+    background-color: #68aa37; 
+    color: #000000;
+    padding: 20px;
+    text-align: center;
+    margin-top: 25px;
+}
+
+.headline h1 {
+    font-size: 24px;
+    margin: 0;
+}
+
+.headline-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* ARTIKEL 1 */
+/* Indledning */
+.øversttekst-artikel1 {
+    line-height: 2;
+    margin: 40px 15% 30px 15%;
+}
+
+/* Første afsnit om motion */
+.øverst-container-artikel1 {
+    display: flex;
+    margin: 40px 15% 30px 15%;
+}
+
+.image1-artikel1 {
+    flex: 1;
+    padding-bottom: 20px;
+    padding-left: 50px;
+}  
+
+.image1-artikel1 img {
+    width: 100%;
+    height: auto;
+}
+
+/* Nederste afsnit om mad */
+.nederst-container-artikel1 {
+    display: flex;
+    margin: 40px 15% 30px 15%;
+}
+
+.image2-artikel1 {
+    flex: 1;
+    padding-bottom: 20px;
+    padding-right: 50px;
+}   
+
+.image2-artikel1 img {
+    width: 100%;
+    height: auto;
+}
+
+/* Øverste og nederste råd */
+.text-column-artikel1 {
+    flex: 1;
+    padding-bottom: 20px;
+}    
+
+/* De tre overskrifter */
+.overskrift-artikel1 {
+    font-weight: bold;
+}
+
+/* Tekst indholdet til de tre råd */
+.tekst-artikel1 {
+    line-height: 2;
+    margin-top: 10px;
+}
+
+/* Overskrift til det midterste råd om søvn */
+.midteroverskrift-artikel1 {
+    font-weight: bold; 
+    margin-left: 15%;
+}
+
+/* Tekst indholdet til det midterste råd om søvn */
+.midtertekst-artikel1 {
+    line-height: 2;
+    margin: 10px 15% 30px 15%;
+}
+
+/* Media query - billeder og tekst går fra række til kolonne, når skærmen bliver mindre */
+@media screen and (max-width: 1349px) {
+    .øverst-container-artikel1, .nederst-container-artikel1 {
+        flex-direction: column;
+    }
+    .image1-artikel1 {
+        padding-left: 0px;
+    }
+    .image2-artikel1 {
+        padding-right: 0px;
+    }   
+
+    .overskrift-artikel1 {
+        padding-top: 15px;
+    }
+}
+
+/* ARTIKEL 2 */
+/* Øverste indledning */
+.underrubrik-artikel2 {
+    margin-left: 15%;
+    margin-right: 15%;
+}
+
+/* Overskrifter i indledningen */
+.underrubrik-artikel2-h2 {
+    font-weight: bolder;
+    padding-top: 25px;
+    padding-bottom: 10px;
+}
+
+/* De fire punkter i indledningen */
+.punktopstilling-artikel2 {
+    list-style-type: disc;
+}
+
+/* Boks til venstre og billede til højre */
+.container-artikel2 {
+    display: flex;
+    max-width: 90%;
+    padding: 50px 15% 50px 15%;
+}
+
+/* Boks til venstre */
+.content-artikel2 {
+    border: 2px solid black;
+    flex: 1;
+    padding: 20px;
+    margin-right: 30px;
+}
+
+/* Råd der er understreget */
+.overskrift-artikel2 {
+    text-decoration: underline;
+}
+
+/* Uddybning af råd */
+.uddybelse-artikel2 {
+    margin-bottom: 15px;
+    margin-top: 5px;
+}
+
+/* Billede til højre */
+.image-artikel2 {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.planlægning-image {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Media query - tekstboks og billede går fra række til kolonne, når skærmen bliver mindre */
+@media screen and (max-width: 1370px) {
+    .container-artikel2 {
+        flex-direction: column;
+    }
+    .planlægning-image {
+        padding-top: 20px;
+    }
+
+    .content-artikel2 {
+        margin-right: 0px;
+    }
+}
+
+/* ARTIKEL 3 */
+/* Indledning, tekst og underoverskrifter */
+.underrubrik-artikel3 {
+    padding: 30px 15% 30px 15%;
+}
+
+.underrubrik-artikel3-p {
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+.underrubrik-artikel3-h2 {
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+/* Billeder af influencere + navn og citat under */
+.image-container-artikel3 {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 10px;
+    margin-left: 15%;
+    margin-right: 15%;
+  }
+  
+.opslag-artikel3 {
+    max-width: 30%;
+    cursor: pointer;  
+}
+  
+/* Instagram billederne */
+  .billeder-artikel3 {
+    width: 100%;
+    height: auto;
+  }
+
+/* Deres navne */
+  .personnavn-artikel3 {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-weight: bolder;
+  }
+
+/* Deres citat */
+  .citat-artikel3 {
+    font-style: italic;
+  }
+
+  /* Media query - billederne går fra række til kolonne, når skærmen bliver mindre */
+  @media screen and (max-width: 768px) {
+    .image-container-artikel3 {
+        flex-direction: column;
+        width: 230%;
+    }
+    .opslag-artikel3 {
+        margin-top: 20px;
+    }
+    }
+
+  /* Formular nederst i artikel 3 */
+  input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+  }
+  
+  input[type=submit] {
+    background-color: #68aa37;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  input[type=submit]:hover {
+    background-color: #68aa37;
+  }
+  
+  .container-inspirationsboks {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 25px;
+    margin: 30px 15% 40px 15%;
+  }
+
+.underrubrik-artikel3-h4 {
+    font-weight: bold;
+    margin-top: 50px;
+    margin-left: 15%;
+    margin-right: 15%;
+}
+  
+/* Footer */
+.footer {
+    text-align: center;
+    background-color: #68aa37; 
+    color: black;
+    padding: 10px;
+  }
+  
+/* "FØLG OS HER" tekst */
+  .footer p {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+  
+/* Sociale medier - ikoner */
+  .social-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .social-icons a {
+    margin: 0 6px;
+    text-decoration: none;
+  }
+  
+/* Ikonbilleder */
+  .social-icons img {
+    width: 30px; 
+    height: auto;
+  }
